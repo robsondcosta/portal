@@ -5,17 +5,17 @@ import {
   SiderComponent
 } from '../../components';
 import { ILayoutComponent } from "./types/Layout.Type";
-import { LayoutStyled } from './styled/Layout.Styled';
+import { LayoutStyled, ContentStyled } from './styled/Layout.Styled';
 
 export const LayoutComponent: React.FC<ILayoutComponent> = ({ children }) => {
   return (
-    <LayoutStyled style={{ height: '100vh'}}>
+    <LayoutStyled>
       <HeaderComponent/>
       <Layout>
         <SiderComponent/>
-        <Layout style={{ padding: '0 24px 24px' }}>
+        <ContentStyled>
           { children }
-        </Layout>
+        </ContentStyled>
       </Layout>
     </LayoutStyled>
   );

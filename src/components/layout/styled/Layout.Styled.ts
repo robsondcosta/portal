@@ -6,3 +6,7 @@ export const LayoutStyled = styled(Layout)`
   margin-top: -0.1px;
   padding-top: 0.1px;
 `;
+
+export const ContentStyled = styled(Layout)`
+  padding: 0px 20px 20px 20px;
+`;
