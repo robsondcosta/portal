@@ -1,5 +1,5 @@
 import { Breadcrumb, Layout, theme } from 'antd';
-import { ContentStyled, TitleStyled } from './styled/Content.Styled';
+import { ContentStyled, BreadcrumbStyled, TitleStyled } from './styled/Content.Styled';
 import { IContentComponent } from './types/Content.Type';
 const { Content } = Layout;
 
@@ -10,17 +10,9 @@ export const ContentComponent: React.FC<IContentComponent> = ({ children, title 
 
   return (
     <>
-      <TitleStyled >
-        {/* {
-          title.map((key) => {
-            <Breadcrumb.Item>{key}</Breadcrumb.Item>
-          })
-        } */}
-
-        <Breadcrumb.Item>Home</Breadcrumb.Item>
-        <Breadcrumb.Item>List</Breadcrumb.Item>
-        <Breadcrumb.Item>App</Breadcrumb.Item>
-      </TitleStyled>
+      <BreadcrumbStyled >
+        <TitleStyled>{title}</TitleStyled>
+      </BreadcrumbStyled>
       <ContentStyled backgroundColor={colorBgContainer}>
         { children }
       </ContentStyled>

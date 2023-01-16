@@ -3,8 +3,8 @@ import { ContentComponent } from '../../components';
 export const Configuracao = () => {
   return (
     <>
-      <ContentComponent title={['']}>
-        Ola as
+      <ContentComponent title={'Configuração'}>
+        Ola painel de configuração
       </ContentComponent>
     </>
   );

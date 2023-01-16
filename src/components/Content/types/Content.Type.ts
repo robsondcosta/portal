@@ -1,6 +1,6 @@
 export interface IContentComponent {
   children: React.ReactNode;
-  title?: string[];
+  title: string;
 }
 
 export interface IContentStyled {
